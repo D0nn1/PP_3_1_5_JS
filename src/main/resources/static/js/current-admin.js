@@ -1,4 +1,4 @@
-const URLNavbarAdmin = 'http://localhost:8080/api/admin/showAccount/';
+const URLNavbarAdmin = '/api/admin/showAccount/';
 const navbarBrandAdmin = document.getElementById('navbarBrandAdmin');
 const tableUserAdmin = document.getElementById('tableAdmin');
 

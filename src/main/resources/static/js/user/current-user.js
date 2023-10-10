@@ -1,4 +1,4 @@
-const URLNavbarUser = 'http://localhost:8080/api/user/showAccount/';
+const URLNavbarUser = '/api/user/showAccount/';
 const navbarBrandUser = document.getElementById('navbarBrandUser');
 const tableUserUser = document.getElementById('tableUser');
 
