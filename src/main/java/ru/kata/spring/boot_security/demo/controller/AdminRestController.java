@@ -82,9 +82,8 @@ public class AdminRestController {
     @PatchMapping("/users/{id}")
     public ResponseEntity<User> updateUser(@RequestBody User userFromWebPage, @PathVariable("id") Long id) {
         userFromWebPage.setId(Math.toIntExact(id));
+        userService.setAndEncodePassword(userFromWebPage, passwordEncoder);
         userService.updateUser(userFromWebPage);
-
-        System.out.println(userFromWebPage);
 
         return new ResponseEntity<>(userFromWebPage, HttpStatus.OK);
     }
